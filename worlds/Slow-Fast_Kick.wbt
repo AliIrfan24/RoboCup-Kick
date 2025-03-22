@@ -1,0 +1,45 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/robotstadium/protos/RobotstadiumSoccerField.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/softbank/nao/protos/Nao.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/balls/protos/SoccerBall.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.3328303692490164 0.2752712683506965 0.9019144494497037 1.8598072231390175
+  position 0.20424348768277945 -7.408232299214393 7.310049851364711
+}
+TexturedBackground {
+  texture "stadium"
+}
+TexturedBackgroundLight {
+  texture "stadium"
+}
+RobotstadiumSoccerField {
+}
+SoccerBall {
+  translation -0.21 0.97 0.11
+  name "Fast Soccer Ball"
+  radius 0.11
+}
+SoccerBall {
+  translation -0.22 -0.98 0.11
+  name "Slow Soccer Ball"
+  radius 0.11
+}
+Nao {
+  translation 0.024496683355558442 -0.973056540803036 0.33222989525394764
+  rotation 0.00171978824534118 5.945795824465468e-05 0.999998519395475 -3.1285897085955408
+  name "Slow Kick Robot"
+  version "V5 (blue)"
+  controller "SlowKick"
+}
+Nao {
+  translation 0.027526159307228057 0.9714282438162659 0.32986019824036505
+  rotation 0.0017396109897674199 0.0001815423674460888 0.9999984703968169 3.126746690956751
+  name "Fast Kick Robot"
+  controller "FastKick"
+}
